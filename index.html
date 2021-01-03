@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Typing Effect js	</title>
+	<style type="text/css" media="screen">
+		body{
+			background: linear-gradient(180deg, #2217038a, transparent),url(image/type.jpg);
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+			height:100vh;
+		}
+		.centerBox {
+    		position: absolute;
+    		top: 32%;
+    		left: 66%;
+    		transform: translate(-50%,-50%);
+    		text-align: center;
+		}
+		span.element {
+            color: white;
+        }
+
+		.centerBox1{
+			position: absolute;
+    		top: 50%;
+    		left: 50%;
+    		transform: translate(-50%,-50%);
+    		text-align: center;
+		}
+		.typeBack{
+			background: black;
+			color: #6251c0;
+			border:1px solid black;
+			border-radius: 3px;
+		}
+		
+	</style>
+</head>
+<body>
+		<div class="typeWrapper">
+				<div class="centerBox">
+					<h1>Mamun Rasid	<br>	<span class="element"></span></h1>
+				</div>
+
+				<div class="centerBox1">
+					<h1>Habib Vai<br>	<span class="lement"></span></h1>
+				</div>
+
+		</div>
+
+<!-----Typing Effect js core file---->
+<script type="text/javascript" src="Javascript/typed.js" ></script>
+<!-----Custom js for Typing Effect--->
+	<script type="text/javascript" >
+		var typed = new Typed('.element', {
+  strings: [' We want to be a WordPress Designer','We want to be a Website Designer','We want to be a Website Developer', 'We want to be a Freelancer','Please Help Us'],
+  smartBackspace: true,
+  typeSpeed: 120,
+  backSpeed: 120,
+  loop:true,
+});
+
+
+		var typed = new Typed('.lement', {
+  strings: ['<span class="typeBack">Please</span>','Please <span class="typeBack">Help Us</span>'],
+  smartBackspace: true,
+  typeSpeed: 70,
+  backSpeed: 70,
+  loop:true,
+  showCursor: false,
+  
+});
+	</script>
+
+</body>
+</html>
+
+
